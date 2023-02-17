@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="shortcut icon" href="images/money-bag.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h3>Money Master <img style="width: 30px;" src="images/money-bag.png" alt=""></h3>
+    </header>
+    <main>
+        <section>
+            <div class="disNone">
+                <img  class="img-fluid" src="images/banner.jpg" alt="">
+            </div>
+            <div class="income-container">
+                <h2 class="titleBar">Income</h2>
+                <br>
+                <div>
+                    <div class="income">
+                        <p>Income:</p>
+                        <input id="income-calculate" type="text">
+                    </div>
+                    <h2 style="text-align: center;">Expenses</h2>
+                    <div class="income-expenses">
+                        <p>Food:</p>
+                        <input id="food-calculate" type="text">
+                    </div>
+                    <div class="income-expenses">
+                        <p>Rent:</p>
+                        <input id="rent-calculate" type="text">
+                    </div>
+                    <div class="income-expenses">
+                        <p>Clothes:</p>
+                        <input id="clothes-calculate" type="text">
+                    </div>
+                </div>
+                <div class="calculate">
+                    <button id="calculate" class="main-calculate">Calculate</button>
+                    <h2>Tatal Expenses: <span id="total-expenses-balance">00</span></h2>
+                    <h2>Balance: <span id="remaining-total-balance">00</span></h2>
+                </div>
+                <div class="saving-calculate">
+                    <p>Save:</p>
+                    <input type="text" name="" id="percentage">
+                    <p>%</p> 
+                    <div class="calu">
+                        <button id="percentage-calculate" class="main-calculate">Save</button>
+                    </div>                   
+                </div>
+                <div class="calculate">
+                    <h2>Saving Amount: <span id="saving-total-amount">00</span></h2>
+                    <h2>Remaining Balance: <span id="remaining-total-balance-after-saving">00</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js file -->
+    <script src="javascript/libs.js"></script>
+    <script src="javascript/calculate.js"></script>
+</body>
+</html>
